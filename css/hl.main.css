@@ -1,0 +1,175 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 Nov 2020, 4:12:03 am
+    Author     : houli
+*/
+
+/*Error checker*/
+.check {
+    background-color: red;
+}
+/*------------------------------------------------------------------------------*/
+.part1 {
+    position:static;
+    width:100%;
+    height:400px;
+    background:black;
+}
+/*------------------------------------------------------------------------------*/
+.caroulogo {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:20em;
+    color:white;
+    font-family:monospace;
+    z-index: 1;
+}
+/*------------------------------------------------------------------------------*/
+.part2 {
+    position:relative;
+    width:100%;
+    height:400px;
+    /*background-image: url("../images/download.jpg");*/
+}
+/*------------------------------------------------------------------------------*/
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 0;
+}
+
+/* Container holding the image and the text */
+.carousel {
+    position: static;
+    text-align: center;
+    color: grey;
+    height:400px;
+    width:100%;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*------------------------------------------------------------------------------*/
+.part3 {
+    /*    position:static;
+        width:100%;
+        height:400px;
+        background:green;*/
+}
+/*------------------------------------------------------------------------------*/
+/* The Modal (background) */
+.modal {
+    display: none;  /*Hidden by default */
+    position: fixed;  /*Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%;  /*Full width */
+    height: 100%;  /*Full height */
+    overflow: auto;  /*Enable scroll if needed */
+    background-color: rgb(0,0,0);  /*Fallback color */
+    background-color: rgba(0,0,0,0.4);  /*Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;  /*15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;  /*Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/*.close:hover,
+*/.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*------------------------------------------------------------------------------*/
+.part4 {
+    position:static;
+    width:100%;
+    height:400px;
+    background:green;   
+}
+/*------------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------------*/
+.part5 {
+    position:static;
+    width:100%;
+    height:auto;
+    padding-top:2rem;
+    padding-top:1rem;
+}
+/*------------------------------------------------------------------------------*/
+/*Form CSS*/
+.form-header{
+    background-color:red;
+    color:white;
+    text-align: center;
+    font-size: 3rem;
+    font-family: sans-serif;
+    width:500px;
+    
+
+}
+
+.form-content{
+    padding:1rem 1rem;
+    width:500px;
+}
+
+label{
+    font-weight: bold;
+}
