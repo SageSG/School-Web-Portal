@@ -13,14 +13,16 @@ if ($_SESSION['uid']!="8888")
 	header("Location: $url");
 }
 ?>
+<!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<link rel="stylesheet" type="text/css" href="css\style.css" charset="utf-8" />
+
 <html lang="en">
     <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <?php
         include "head.php";
         ?>
@@ -79,24 +81,24 @@ $conn=mysqli_connect("localhost","sqldev","password","project");
 			echo "<table class='table'>";
 			echo "<thead>";
 			echo "<tr>";
-			echo "<th scope='col'>UID</td>";
-			echo "<th scope='col'>email</td>";
-			echo "<th scope='col'>name</td>";
-                        echo "<th scope='col'>CCA</td>";
-                        echo "<th scope='col'>bid</td>";
-                        echo "<th scope='col'>delete</td>";
+			echo "<th scope='col'>UID</th>";
+			echo "<th scope='col'>email</th>";
+			echo "<th scope='col'>name</th>";
+                        echo "<th scope='col'>CCA</th>";
+                        echo "<th scope='col'>bid</th>";
+                        echo "<th scope='col'>delete</th>";
 			echo "</tr>";
                         echo "</thead>";
                         echo "<tbody>";
 			while($query->fetch())
 			{
 				echo "<tr>";
-				echo "<td scope='col'>".$uid."</td>";
-				echo "<td scope='col'>".$email."</td>";
-				echo "<td scope='col'>".$username."</td>";
-                                echo "<td scope='col'>".$bname."</td>";
-                                echo "<td scope='col'>".$bid."</td>";
-				echo "<td scope='col'><a href='deletecca.php?operation=delete&bid=".$bid."'>delete</a></td>";
+				echo "<td>".$uid."</td>";
+				echo "<td>".$email."</td>";
+				echo "<td>".$username."</td>";
+                                echo "<td>".$bname."</td>";
+                                echo "<td>".$bid."</td>";
+				echo "<td><a href='deletecca.php?operation=delete&bid=".$bid."'>delete</a></td>";
 				echo "</tr>";	
 	
 			}
