@@ -128,17 +128,17 @@ and open the template in the editor.
                         <div class="form-row">
                             <div class="form-group col-lg-12">
                                 <label class="d-none"><b>First Name:</b></label>
-                                <input class="form-control" type="text" id="username" name="username"
+                                <input class="form-control" type="text" id="username" name="username" placeholder="First name"
                                        maxlength="45" value="<?php echo $userDetails->username; ?>" onkeyup="lettersOnly(this)">
                             </div>
                             <div class="form-group col-lg-12">
                                 <label class="d-none"><b>Email:</b></label>
-                                <input class="form-control" type="email" id="email" name="email"
+                                <input class="form-control" type="email" id="email" name="email" placeholder="Email"
                                        maxlength="45" value="<?php echo $userDetails->email; ?>">
                             </div>
                             <div class="form-group col-lg-12">
                                 <label class="d-none"><b>Password:</b></label>
-                                <input class="form-control" type="password" id="password" name="password"
+                                <input class="form-control" type="password" id="password" name="password" placeholder="Password"
                                        maxlength="45" required value="">
                             </div>
                             <div class="form-group col-lg-12">
@@ -150,9 +150,7 @@ and open the template in the editor.
 
                 <div>
                     <br>
-
                 </div>
-
             </main>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div id="footer">
