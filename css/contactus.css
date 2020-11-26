@@ -1,0 +1,100 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 Nov 2020, 4:12:03 am
+    Author     : houli
+*/
+/*
+█▀▀ █▀▀█ █▀▀▄ ▀▀█▀▀ █▀▀█ █▀▀ ▀▀█▀▀   █░░█ █▀▀
+█░░ █░░█ █░░█ ░░█░░ █▄▄█ █░░ ░░█░░   █░░█ ▀▀█
+▀▀▀ ▀▀▀▀ ▀░░▀ ░░▀░░ ▀░░▀ ▀▀▀ ░░▀░░   ░▀▀▀ ▀▀▀
+*/
+/*------------------------------------------------------------------------------*/
+
+.contact-1{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.carousel-1 {
+    position:static;
+    width:100%;
+    background:black;
+    text-align: center;
+}
+
+.carousel-inner{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.carousel-caption{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color:darkorange;
+}
+
+.carousel-images {
+    height: 400px;
+    background: no-repeat fixed;
+    background-position: center;
+}
+
+.contact-centered{
+    text-align: center;
+    width:80%;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-centered h1{
+
+    font-family: sans; color: red;
+}
+
+/*------------------------------------------------------------------------------*/
+.creators {
+    position:static;
+    width:100%;
+    text-align: center;
+}
+/*------------------------------------------------------------------------------*/
+
+.thumbnail-title{
+    text-align: center;
+    font-size:30px;
+    color:rgb(255, 215, 0);
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-family: sans; color: goldenrod;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:80%;
+    height:auto;
+    display: flex;
+    padding: 16px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:2rem;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.thumbnail-pic{
+    height:250px;
+    width:100%;
+}
+
+

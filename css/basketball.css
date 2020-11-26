@@ -1,0 +1,161 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 Nov 2020, 4:12:03 am
+    Author     : houli
+*/
+
+
+/*------------------------------------------------------------------------------*/
+
+/*Form CSS*/
+
+.form-padding{
+    padding-top: 4em;
+    padding-bottom:4em;
+}
+
+label{
+    font-weight: bold;
+}
+
+.modal-footer {
+    margin-left: auto;
+    margin-right:auto;
+}
+
+/*********************************************************************************/
+/*█▀▀▄ █▀▀█ █▀▀ █░█ █▀▀ ▀▀█▀▀ █▀▀▄ █▀▀█ █░░ █░░
+  █▀▀▄ █▄▄█ ▀▀█ █▀▄ █▀▀ ░░█░░ █▀▀▄ █▄▄█ █░░ █░░
+  ▀▀▀░ ▀░░▀ ▀▀▀ ▀░▀ ▀▀▀ ░░▀░░ ▀▀▀░ ▀░░▀ ▀▀▀ ▀▀▀*/
+/*********************************************************************************/
+.bb-part1 {
+    position:static;
+    width:100%;
+    height:650px;
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+        ),url("../images/basketball.gif");
+    background-size:cover;
+}
+
+.bb-header {
+    position:absolute;
+    width:100%;
+    height:650px;
+}
+
+/* Centered text */
+.bb-content {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-family:Verdana, Geneva, sans-serif;
+    z-index: 1;
+    opacity:80%;
+    font-weight:bold;
+    text-align: center;
+}
+
+hr.bb {
+    border-bottom: 0.2vw solid white;
+    width:70%;
+}
+
+hr.ba {
+    border-bottom: 0.2vw solid black;
+}
+
+.trophy-logos{
+    width:20%;
+}
+
+/* Centered text */
+.bb-centered2 {
+    position:static;
+    text-align: center;
+    color:black;
+    font-size:4vw;
+    font-weight:bold;
+    z-index: 1;
+}
+
+/*------------------------------------------------------------------------------*/
+.bb-part2 {
+    width: 100%;
+    background: darkorange;
+    background-size: 100% 100%;
+    padding:50px;
+}
+/*------------------------------------------------------------------------------*/
+.bb-part2-text{
+    margin-left: auto;
+    margin-right: auto;
+    font-size:3rem;
+    width: 80%;
+}
+
+/*------------------------------------------------------------------------------*/
+.bb-part3 {
+    position:static;
+    width:100%;
+    text-align: center;
+    background:black;
+}
+
+/*------------------------------------------------------------------------------*/
+.bb-part4 {
+    position:static;
+    width:100%;
+    height:auto;
+    background: url("../images/basketballform.jpg") no-repeat fixed;
+    background-size: 100% 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .form-header{
+        width:80%;
+        background-color:grey;
+        background-color:rgba(0, 0, 0, 0.5);
+        color:white;
+        text-align: center;
+        font-size: 3rem;
+        font-family: sans-serif;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .form-content{
+        width:80%;
+        padding:1rem 1rem;
+        background-color:rgba(0, 0, 0, 0.5);
+        color:white;
+    }
+}
+
+@media screen and (min-width: 701px) {
+    .form-header{
+        width:50%;
+        background-color:grey;
+        background-color:rgba(0, 0, 0, 0.5);
+        color:white;
+        text-align: center;
+        font-size: 3rem;
+        font-family: sans-serif;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .form-content{
+        width:50%;
+        padding:1rem 1rem;
+        background-color:rgba(0, 0, 0, 0.5);
+        color:white;
+    }
+}

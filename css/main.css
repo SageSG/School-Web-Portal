@@ -1,0 +1,316 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 Nov 2020, 4:12:03 am
+    Author     : houli
+*/
+
+/*Error checker*/
+.check {
+    background-color: red;
+}
+
+.active {
+    color:white;
+}
+
+/*To top button*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 80px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: grey; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    opacity:60%;
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+    opacity:100%;
+}
+/*------------------------------------------------------------------------------*/
+.part1 {
+    position:static;
+    width:100%;
+    height:600px;
+    background:black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/*------------------------------------------------------------------------------*/
+.part2 {
+    position:absolute;
+    width:100%;
+    height:400px;
+}
+
+.part8 {
+    position:static;
+    width:100%;
+    height:400px;
+    background:red;
+}
+/*------------------------------------------------------------------------------*/
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/* Centered text */
+.centered {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:8em;
+    color:black;
+    font-family:monospace;
+    z-index: 1;
+    opacity:80%;
+}
+/*------------------------------------------------------------------------------*/
+.jumbotron {
+    padding: 2rem 1rem;
+}
+
+/* Container holding the image and the text */
+.carousel {
+    position: static;
+    text-align: center;
+    color: grey;
+    height:400px;
+    width:100%;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/*------------------------------------------------------------------------------*/
+.part3 {
+    /*        position:relative;
+            width:100%;
+            height:400px;
+            background:green;
+            border:solid;*/
+}
+/*------------------------------------------------------------------------------*/
+/* The Modal (background) */
+.modal {
+    display: none;  /*Hidden by default */
+    position: fixed;  /*Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%;  /*Full width */
+    height: 100%;  /*Full height */
+    overflow: auto;  /*Enable scroll if needed */
+    background-color: rgb(0,0,0);  /*Fallback color */
+    background-color: rgba(0,0,0,0.4);  /*Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;  /*15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;  /*Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/*.close:hover,
+*/.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*------------------------------------------------------------------------------*/
+.part4 {
+    position:static;
+    width:100%;
+    height:auto;
+}
+/*------------------------------------------------------------------------------*/
+/*Form CSS*/
+.form-header{
+    background-color:grey;
+    color:white;
+    text-align: center;
+    font-size: 3rem;
+    font-family: sans-serif;
+}
+
+.form-content{
+    padding:1rem 1rem;
+}
+
+label{
+    font-weight: bold;
+}
+
+/*------------------------------------------------------------------------------*/
+.part5 {
+    position:static;
+    width:100%;
+    height:400px;
+    text-align: center;
+    background-color:black;
+    margin-left: auto;
+    margin-right:auto;
+}
+/*------------------------------------------------------------------------------*/
+@media screen and (max-width: 700px) {
+    .emb-video{
+        position: static;
+        width:100%;
+        height:100%;
+    }
+}
+
+@media screen and (min-width: 701px) {
+    .emb-video{
+        position: relative;
+        width:100%;
+        height:100%;
+    }
+}
+/*------------------------------------------------------------------------------*/
+.part6 {
+    position:static;
+    width:100%;
+    text-align: center;
+}
+/*------------------------------------------------------------------------------*/
+
+.thumbnail-title{
+    padding-top: 2rem;
+    font-size:30px;
+    color:black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.part6-margin{
+    margin:0;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:80%;
+    height:auto;
+    display: flex;
+    padding: 16px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:2rem;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.thumbnail-pic{
+    height:200px;
+    width:100%;
+}
+
+/*------------------------------------------------------------------------------*/
+.part7 {
+    position:static;
+    width:100%;
+    text-align: center;
+    /*height:400px;*/
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+
+/*------------------------------------------------------------------------------*/
+.part9 {
+    width: 100%;
+    height:400px;
+    background: url("../images/diving.png") no-repeat fixed;
+    background-size: 100% 100%;
+}
+/*------------------------------------------------------------------------------*/
+.part9-text{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight:bold;
+    font-size:2vw;
+    letter-spacing: 2px;
+    color:#D2D2D2;
+    width: 80%;
+}
+/*------------------------------------------------------------------------------*/
+.part10 {
+    width: 100%;
+    height: 600px;
+    background: no-repeat fixed;
+    background-size: 100% 100%;
+    padding-top:100px;
+}
+
+.settings {
+    position:static;
+    margin:5%;
+}
+
+.hp {
+    width: 100%;
+    min-height:400px;
+    background: no-repeat fixed;
+    background-size: 100% 100%;
+    padding-top:100px;
+    padding:2em;
+}
+
+.hp-text {
+    font-size:2vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}

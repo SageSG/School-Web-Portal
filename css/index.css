@@ -1,0 +1,184 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 Nov 2020, 4:12:03 am
+    Author     : houli
+*/
+
+/*
+░▀░ █▀▀▄ █▀▀▄ █▀▀ █░█
+▀█▀ █░░█ █░░█ █▀▀ ▄▀▄
+▀▀▀ ▀░░▀ ▀▀▀░ ▀▀▀ ▀░▀
+*/
+
+h1{
+    font-size: 5vw;
+}
+
+.index-1{
+    position:relative;
+    width:100%;
+    height:auto;
+    text-align:center;
+    font-family:"Lucida Console";
+    background:black;
+    
+}
+
+video{
+    border:none;
+}
+
+h1{
+    font-size:4vw;
+}
+
+h2{
+    padding:0.5em;
+    font-size:2.5vw;
+}
+
+h3{
+    padding:1.5em;
+    font-size:1.8vw;
+}
+h4{
+    font-size:1.8vw;
+}
+
+
+
+.video {
+    position:relative;
+    width:100%;
+    height:420px;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    /*background:black;*/
+}
+
+/*------------------------------------------------------------------------------*/
+
+
+.index-content {
+    position:absolute;
+    width:100%;
+    height:780px;
+}
+
+.index-4 {
+    background: url("../images/study.jpg") no-repeat;
+    position:static;
+    width:100%;
+    height:780px;
+    background-position: center;
+    background-size:cover;
+}
+
+.index-5 {
+    background: url("../images/bb.jpg") no-repeat;
+    position:static;
+    width:100%;
+    height:780px;
+    background-position: center;
+    background-size:cover;
+    
+}
+
+.index-6 {
+    background: url("../images/fakebuilding.jpg") no-repeat;
+    position:static;
+    width:100%;
+    height:780px;
+    background-position: center;
+    background-size:cover;
+    
+}
+
+.index-7 {
+    background: url("../images/trip.jpg") no-repeat;
+    position:static;
+    width:100%;
+    height:780px;
+    background-position: center;
+    background-size:cover;
+    
+}
+/*------------------------------------------------------------------------------*/
+
+/* Centered text */
+.centered {
+    position:absolute;
+    top: 50%;
+    left: 30%;
+    font-size:5vw;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-family:monospace;
+    z-index: 1;
+}
+
+/* Centered text */
+.centered3 {
+    position:absolute;
+    top: 40%;
+    left: 30%;
+    font-size:5vw;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-family:monospace;
+    z-index: 1;
+}
+
+/* Centered text */
+.centered2 {
+    position:absolute;
+    top: 50%;
+    left: 70%;
+    font-size:5vw;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-family:monospace;
+    z-index: 1;
+    }
+
+    
+    /* Centered text */
+.centered4 {
+    position:absolute;
+    top: 70%;
+    left: 30%;
+    font-size:5vw;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-family:monospace;
+    z-index: 1;
+}
+/*------------------------------------------------------------------------------*/
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom:0;
+}
+
+
+/*------------------------------------------------------------------------------*/
+@media screen and (max-width: 700px) {
+    .emb-video{
+        position: relative;
+        width:100%;
+        height:100%;
+        
+    }
+}
+
+@media screen and (min-width: 701px) {
+    .emb-video{
+        position: relative;
+        width:100%;
+        height:100%;
+    }
+}
