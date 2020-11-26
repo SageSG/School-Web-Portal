@@ -12,6 +12,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <?php
@@ -50,19 +51,19 @@ and open the template in the editor.
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <div class="carousel-images"><img src="images/schoolmain1.jpg" alt="School in the morning" class="sitbuilding-pic" width="100%"></div>
+                                        <div class="carousel-images"><img src="images/schoolmain1.jpg" alt="School in the morning" class="sitbuilding-pic"></div>
                                         <div class="carousel-caption">
                                             <h2>School @ Morning</h2>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="carousel-images"><img src="images/schoolmain2.jpg" alt="School in the afternoon" class="sitbuilding-pic" width="100%"></div>
+                                        <div class="carousel-images"><img src="images/schoolmain2.jpg" alt="School in the afternoon" class="sitbuilding-pic"></div>
                                         <div class="carousel-caption">
                                             <h2>School @ Afternoon</h2>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="carousel-images" ><img src="images/schoolmain.jpg" alt="School in the night" class="sitbuilding-pic" width="100%"></div>
+                                        <div class="carousel-images" ><img src="images/schoolmain.jpg" alt="School in the night" class="sitbuilding-pic"></div>
                                         <div class="carousel-caption">
                                             <h2>School @ Night</h2>
                                         </div>
@@ -89,7 +90,7 @@ and open the template in the editor.
 
 
 
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top <img src="images/download.png" width="25px"></button>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top <img src="images/download.png" alt="to top button" width="25"></button>
 
 
             <section class="creators">

@@ -12,6 +12,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <?php
@@ -26,15 +27,14 @@ and open the template in the editor.
         ?>
         <main>
 
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top<img src="images/download.png" width="25px"></button>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top<img src="images/download.png" alt="to top button" width="25"></button>
 
-
-            <section class="index-1">
-                <video width="100%" height="auto" controls autoplay poster="/images/videoposter.JPG">
+            <div class="index-1">
+                <video class="emb-video" controls autoplay poster="/images/videoposter.JPG">
                     <source src="/video/afterschool.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-            </section>
+            </div>
 
             <?php
             if ($_SESSION['uid']) {
@@ -54,13 +54,13 @@ and open the template in the editor.
             </section>
 
 
-            <section class="index-5">
+            <div class="index-5">
                 <a href="/signup.php">
                     <div class="index-content">
                         <div class="centered2">CCA Enrollment</div>
                     </div>  
                 </a>
-            </section>
+            </div>
             
             <!--This is a jumbotron!-->
             <!--Implement bootstrap jumbotron class-->
@@ -73,13 +73,13 @@ and open the template in the editor.
                 </p>
             </section>
 
-            <section class="index-7">
+            <div class="index-7">
                 <a href="/oversea.php">
                     <div class="index-content">
                         <div class="centered4">Take <br>Me</div>
                     </div>  
                 </a>
-            </section>        
+            </div>        
 
             <!--This is a jumbotron!-->
             <!--Implement bootstrap jumbotron class-->
@@ -93,13 +93,13 @@ and open the template in the editor.
             </section>
 
 
-            <section class="index-6">
+            <div class="index-6">
                 <a href="/contactus.php">
                     <div class="index-content">
                         <div class="centered3">View <br>Details</div>
                     </div>  
                 </a>
-            </section>
+            </div>
 
         </main>
         <?php

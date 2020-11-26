@@ -6,7 +6,7 @@ $userDetails=$userClass->userDetails($_SESSION['uid']);
 include('session.php');
 $userDetails=$userClass->userDetails($session_uid);
 ?>
-
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <?php
@@ -20,7 +20,7 @@ $userDetails=$userClass->userDetails($session_uid);
         include "navbar.php";
         ?>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top<img src="images/download.png" width="25px"></button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top<img src="images/download.png" alt="to top button" width="25"></button>
       
 <section class="part1">
                 <!--Carousel-->

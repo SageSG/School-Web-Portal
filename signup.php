@@ -66,6 +66,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <?php
@@ -109,8 +110,8 @@ and open the template in the editor.
 
             <section class="bb-part2">
                 <div class="bb-part2-text">
-                    <h1 class="bb-centered2">About Basketball<hr class="ba"></h1>
-
+                    <h1 class="bb-centered2">About Basketball</h1>
+                    <hr/>
                     <p style="font-size:2vw;"> 
                         Basketball is a sport played by two teams of five players on a rectangular court. The objective is to shoot a ball through a hoop 18 inches (46 cm) in diameter and 10 feet (3.048 m) high mounted to a backboard at each end.
                     </p>

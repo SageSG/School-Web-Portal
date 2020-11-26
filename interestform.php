@@ -37,7 +37,6 @@
                 </select>
             </div>
 
-
             <div class="form-group">
                 <label for="slct2">Course Title</label>
                 <select class="form-control" id="slct2" name="slct2">

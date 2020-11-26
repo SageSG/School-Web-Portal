@@ -12,6 +12,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <?php
@@ -26,18 +27,18 @@ and open the template in the editor.
         ?>
         <main>
 
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top <img src="images/download.png" width="25px"></button>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top <img src="images/download.png" alt="to top button" width="25"></button>
 
-            <section class="overseas-1">
+            <div class="overseas-1">
                 <section class="overseas-2">
                     <div class="os-content">
                         <h4 style="font-size:1.8vw;">Miracle's</h4>
                     <hr class="OT">
-                    <h1 style="font-size:5vw;">Overseas Trip</h1>
+                    <div style="font-size:5vw;">Overseas Trip</div>
                     <hr class="OT">
                     </div>
                 </section>  
-            </section>        
+            </div>        
 
             <section class="oversea-section">
                 <div class="tile-1 row">  
@@ -58,7 +59,7 @@ and open the template in the editor.
                                 Duration: 2 weeks
                                 <br>
                             </p>
-                            <a class="btn btn-outline-dark btn-lg" id="overseasdetail" role="button" data-toggle="modal" data-target="#exampleModalCenter">Overseas Detail</a>
+                            <a class="btn btn-outline-dark btn-lg" id="overseasdetail1" role="button" data-toggle="modal" data-target="#exampleModalOverseas1">Overseas Detail</a>
                         </div>    
                     </div>
                 </div> 
@@ -79,7 +80,7 @@ and open the template in the editor.
                                 Duration: 2 weeks
                                 <br>
                             </p>
-                            <a class="btn btn-outline-dark btn-lg" id="overseasdetail" role="button" data-toggle="modal" data-target="#exampleModalOverseas2">Overseas Detail</a>
+                            <a class="btn btn-outline-dark btn-lg" id="overseasdetail2" role="button" data-toggle="modal" data-target="#exampleModalOverseas2">Overseas Detail</a>
                         </div>    
                     </div>
                 </div>
@@ -102,7 +103,7 @@ and open the template in the editor.
                                 Duration: 2 weeks
                                 <br>
                             </p>
-                            <a class="btn btn-outline-dark btn-lg" id="overseasdetail" role="button" data-toggle="modal" data-target="#exampleModalOverseas3">Overseas Detail</a>
+                            <a class="btn btn-outline-dark btn-lg" id="overseasdetail3" role="button" data-toggle="modal" data-target="#exampleModalOverseas3">Overseas Detail</a>
                         </div>    
                     </div>
                 </div>
@@ -112,11 +113,11 @@ and open the template in the editor.
             </section>
 
             <!--Modal--> 
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="exampleModalOverseas1" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Overseas trip</h5>
+                            <h5 class="modal-title" aria-labelledby="exampleModalOverseas1">Overseas trip</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -225,11 +226,11 @@ and open the template in the editor.
             </div>
 
             <!--                overseas modal 2-->
-            <div class="modal fade" id="exampleModalOverseas2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" tabindex="-1" id="exampleModalOverseas2" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Overseas trip</h5>
+                            <h5 class="modal-title" aria-labelledby="exampleModalOverseas2">Overseas trip</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -337,11 +338,11 @@ and open the template in the editor.
                 </div>
             </div>
 
-            <div class="modal fade" id="exampleModalOverseas3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" tabindex="-1" id="exampleModalOverseas3" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Overseas trip</h5>
+                            <h5 class="modal-title" aria-labelledby="exampleModalOverseas3">Overseas trip</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>

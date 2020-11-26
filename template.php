@@ -391,7 +391,7 @@ and open the template in the editor.
                             Title 3
                         </div>
                         <div class="card">
-                            <img src="images/superman.jpg" alt="Avatar" class="thumbnail-pic">
+                            <img src="images/rip.jpg" alt="Avatar" class="thumbnail-pic">
                             <div class="container">
                                 <hr class="my-4">
                                 <h4><b>Hwee Keong</b></h4>
