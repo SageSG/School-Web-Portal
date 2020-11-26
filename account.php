@@ -13,9 +13,10 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<link rel="stylesheet" type="text/css" href="css\style.css" charset="utf-8" />
+
 <html lang="en">
     <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <?php
         include "head.php";
         ?>
@@ -74,18 +75,18 @@ and open the template in the editor.
                     <table class='table'>
                         <thead>
                             <tr>
-                                <td scope='col'>
+                                <td>
                                     <label>First Name: </label>
                                 </td>
-                                <td scope='col'>
+                                <td>
                                     <?php echo $userDetails->username; ?>
                                 </td>
                             </tr>
                             <tr>
-                                <td scope='col'>
+                                <td>
                                     <label>Email: </label>
                                 </td>
-                                <td scope='col'>
+                                <td>
                                     <?php echo $userDetails->email; ?>
                                 </td>
                             </tr>
@@ -98,32 +99,34 @@ and open the template in the editor.
                         <div class="part6">
                             <br>
                             <h4><b>Change Email</b></h4>
-                            <form method=POST action="update.php" class="container form-content" value="updateAcc">
+                            <form method=POST action="update.php" class="container form-content" >
                                 <div class="form-row">
                                     <div class="form-group col-lg-12">
-                                        <label for="search user" class="d-none"><b>Email:</b></label>
-                                        <input class="form-control" type="email" id="emailReg" name="emailReg"
-                                               maxlength="45" value="<?php echo $userDetails->email; ?>">
+                                        <label class="d-none"><b>Email:</b></label>
+                                        <input class="form-control" type="email" id="emailReg" name="emailReg" aria-label="emailupdate"
+                                               maxlength="45" placeholder="name@example.com" value="<?php echo $userDetails->email; ?>">
                                     </div>
 
                                     <div class="form-group col-lg-12">
                                         <button type="submit" class="btn btn-secondary btn-sm" value="yes" name="updateAcc">Update Email</button>
+                                    <br><br><br><br><br><br><br><br>
                                     </div>
+                                    
                                 </div>
                             </form>
                         </div>
                 </div>
                 <br>
                 <br>
-
-                </main>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+             
+                </main><br><br><br><br><br>
             <div id="footer">
                 <?php
                 include "footer.php";
                 ?>
                 </div>
-</div>
+        </div>
                 </body>
                 </html>
 
