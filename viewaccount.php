@@ -14,14 +14,16 @@ if ($_SESSION['uid']!="8888")
 }
 
 ?>
+<!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<link rel="stylesheet" type="text/css" href="css\style.css" charset="utf-8" />
+
 <html lang="en">
     <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <?php
         include "head.php";
         ?>
@@ -39,12 +41,11 @@ and open the template in the editor.
         <div class="part6">
                             <br>
                             <h4><b>Search User</b></h4>
-  <form method=POST action="" class="container form-content" name="user">
+                            <form method=POST action="viewaccount.php" class="container form-content" name="user">
       <div class="form-row">
           <div class="form-group col-lg-12">
-              <label for="search user" class="d-none"><b>Search User:</b></label>
                                 <input class="form-control" type="text" id="uname" name="uname"
-                                       maxlength="45" placeholder="Enter Username" onkeyup="lettersOnly(this)">
+                                       maxlength="45" placeholder="Enter Username" onkeyup="lettersOnly(this)" aria-label="Search">
           </div>
           <div class="form-group col-lg-12">
           <button type="submit" class="btn btn-secondary btn-sm" value="yes" name="user">Find User</button>
@@ -86,8 +87,8 @@ if(isset($_POST["user"])) {
 			}
                         echo "</tbody>";
 		}
-	}	
-echo "</table>";
+                echo "</table>";
+	}
 ?>
       <br>
 <br>
