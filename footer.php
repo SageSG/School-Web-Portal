@@ -1,32 +1,35 @@
-  <!-- Site footer -->
+<!-- Site footer -->
     <footer style="position:relative;bottom:0;" class="site-footer bg-dark d-lg-block">
         <div class="container d-none d-xl-block">
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <h6>About</h6>
-            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+            <p class="text-justify">Our aim is to build a <i>user friendly and secure website.</i> for everyone who is in <i>MIRACLE UNIVERSITY</i> to use. We have catered to users who belong to the school such as
+                students and the administrators. Whereby students are able to sign up for oversea's trip, events and cca, at the same time able to cancel them if they have changed their mind and also able to update
+                their personal information. Administrator is able to manage the student's account such as searching for a particular user, and also able to delete the user should the student withdraw from the course.
+            </p>
           </div>
 
           <div class="col-xs-6 col-md-3">
-            <h6>Categories</h6>
+            <h6>Technologies used</h6>
             <ul class="footer-links">
-              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+              <li><a href="https://www.google.com/doodles">C</a></li>
+              <li><a href="https://www.google.com/doodles">CSS</a></li>
+              <li><a href="https://www.google.com/doodles">PHP</a></li>
+              <li><a href="https://www.google.com/doodles">JavaScript</a></li>
+              <li><a href="https://www.google.com/doodles">MySQL Workbench</a></li>
+              <li><a href="https://www.google.com/doodles">Apache/Ubuntu</a></li>
             </ul>
           </div>
 
           <div class="col-xs-6 col-md-3">
-            <h6>Quick Links</h6>
+            <h6>security(technologies used)</h6>
             <ul class="footer-links">
-              <li><a href="http://scanfcode.com/about/">About Us</a></li>
-              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+              <li><a href="https://www.google.com/doodles">Advanced Intrusion Detection Environment</a></li>
+              <li><a href="https://www.google.com/doodles">Cron</a></li>
+              <li><a href="https://www.google.com/doodles">ssmtp</a></li>
+              <li><a href="https://www.google.com/doodles">Privacy Policy</a></li>
+              <li><a href="https://www.google.com/doodles">Sitemap</a></li>
             </ul>
           </div>
         </div>
@@ -42,10 +45,10 @@
 
           <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>   
+              <li><a class="facebook" href="https://www.google.com.sg/" aria-label="Read more about facebook"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a class="twitter" href="https://www.google.com.sg/" aria-label="Read more about twitter"><i class="fab fa-twitter"></i></a></li>
+              <li><a class="instagram" href="https://www.google.com.sg/" aria-label="Read more about instagram"><i class="fab fa-instagram"></i></a></li>
+              <li><a class="linkedin" href="https://www.google.com.sg/" aria-label="Read more about linkedin"><i class="fab fa-linkedin-in"></i></a></li>   
             </ul>
           </div>
         </div>

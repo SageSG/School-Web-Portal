@@ -90,7 +90,6 @@ if (!empty($_POST['signupSubmit']))
 }
 ?>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates

@@ -6,7 +6,6 @@ $userDetails=$userClass->userDetails($_SESSION['uid']);
 include('session.php');
 $userDetails=$userClass->userDetails($session_uid);
 ?>
-<!doctype html>
 
 <html lang="en">
     <head>

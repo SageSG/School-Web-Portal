@@ -19,7 +19,6 @@ $ga = new GoogleAuthenticator();
 $qrCodeUrl = $ga->getQRCodeGoogleUrl($email, $secret,'9lessons Demos');
 ?>
 
-<!DOCTYPE html>
 <html>
 <head>
     <?php

@@ -71,7 +71,7 @@ session_start();
                     echo "<div class='dropdown-divider'></div>";
                     echo "<a class='dropdown-item' href='/account.php'>Manage Account</a>";
                 }
-                echo "</div>";
+                echo "</div></li>";
                 echo "<li class='nav-item'>";
                 echo "<a class='nav-link' href='/logout.php'>Logout <i class='fas fa-door-open login_logo'></i></a></li>";
             } else {
@@ -79,7 +79,6 @@ session_start();
                 echo "<a class='nav-link' href='/register.php'>Login <i class='fas fa-door-open login_logo'></i></a></li>";
             };
             ?>
-            </li>
         </ul>
     </div>
 </nav>

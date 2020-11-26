@@ -13,7 +13,6 @@ if ($_SESSION['uid']!="8888")
 	header("Location: $url");
 }
 ?>
-<!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates

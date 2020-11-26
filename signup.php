@@ -61,7 +61,6 @@ if (!empty($_POST['dele'])) {
     $conn->close();
 }
 ?>
-<!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -81,14 +80,14 @@ and open the template in the editor.
         ?>
         <main>
 
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top <img src="images/download.png" width="25px"></button>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top <img src="images/download.png" alt="to top button" width="25"></button>
 
-            <section class="bb-part1">
-                <section class="bb-header">
+            <div class="bb-part1">
+                <div class="bb-header">
                     <div class="bb-content">
                         <h4 style="font-size:1.8vw;">Miracle's</h4>
                         <hr class="bb">
-                        <h1 style="font-size:5vw;">Basketball</h1>
+                        <div style="font-size:5vw;">Basketball</div>
                         <hr class="bb">             
                         <?php
                         if ($_SESSION['uid']) {
@@ -105,8 +104,8 @@ and open the template in the editor.
                         }
                         ?>
                     </div>
-                </section>  
-            </section>
+                </div>  
+            </div>
 
             <section class="bb-part2">
                 <div class="bb-part2-text">
@@ -120,14 +119,14 @@ and open the template in the editor.
 
             <!--This is the achievement section!-->
             <section class="bb-part3">
-                <img src="images/trophies2.jpg" alt="Trophies" usemap="#workmap" width="100%;" height="auto;">
-                <map name="workmap" id="map_ID">
-                    <area shape="poly" coords="838,64,876,34,906,64,845,191,784,256,894,554,617,554,733,258,607,78,644,34,682,67" alt="2020 Champions - Jr. bryant" data-toggle="modal" data-target="#Trophy1">
-                    <div class="modal fade" id="Trophy1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <img src="images/trophies2.jpg" alt="Trophies" usemap="#workmap" class="mappic">
+                <map name="workmap" id="workmap">
+                    <area shape="poly" href="#" coords="838,64,876,34,906,64,845,191,784,256,894,554,617,554,733,258,607,78,644,34,682,67" alt="2020 Champions - Jr. bryant" data-toggle="modal" data-target="#Trophy1">
+                    <div class="modal fade" id="Trophy1" tabindex="-1" role="dialog" aria-labelledby="Modal1" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">2020 Champion Trophy</h5>
+                                    <h5 class="modal-title" id="Modal1">2020 Champion Trophy</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -143,12 +142,12 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>
-                    <area shape="poly" coords="1049,70,1080,73,1091,101,1274,101,1291,59,1333,81,1299,167,1240,229,1222,250,1218,306,1199,318,1230,453,1243,497,1265,509,1265,536,1156,545,1097,528,1097,500,1120,491,1140,440,1160,320,1141,302,1141,255,1079,176,1030,102" alt="Most popular team - team titans" data-toggle="modal" data-target="#Trophy2">
-                    <div class="modal fade" id="Trophy2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <area shape="poly" href="#" coords="1049,70,1080,73,1091,101,1274,101,1291,59,1333,81,1299,167,1240,229,1222,250,1218,306,1199,318,1230,453,1243,497,1265,509,1265,536,1156,545,1097,528,1097,500,1120,491,1140,440,1160,320,1141,302,1141,255,1079,176,1030,102" alt="Most popular team - team titans" data-toggle="modal" data-target="#Trophy2">
+                    <div class="modal fade" id="Trophy2" tabindex="-1" role="dialog" aria-labelledby="Modal2" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">Highest popularity Trophy</h5>
+                                    <h5 class="modal-title" id="Modal2">Highest popularity Trophy</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -164,12 +163,12 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>
-                    <area shape="poly" coords="451,62,484,79,467,154,429,217,374,285,372,346,361,367,407,456,417,534,280,533,286,469,334,368,325,340,329,283,270,211,218,107,223,77,254,67,257,89,350,86,433,92" alt="Game of the year - Game Throwers" data-toggle="modal" data-target="#Trophy3">
-                    <div class="modal fade" id="Trophy3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <area shape="poly" href="#" coords="451,62,484,79,467,154,429,217,374,285,372,346,361,367,407,456,417,534,280,533,286,469,334,368,325,340,329,283,270,211,218,107,223,77,254,67,257,89,350,86,433,92" alt="Game of the year - Game Throwers" data-toggle="modal" data-target="#Trophy3">
+                    <div class="modal fade" id="Trophy3" tabindex="-1" role="dialog" aria-labelledby="Modal3" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">Game of the Year</h5>
+                                    <h5 class="modal-title" id="Modal3">Game of the Year</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -213,7 +212,7 @@ and open the template in the editor.
                     };
                     window.onresize = this.resize;
                 },
-                        imageMap = new ImageMap(document.getElementById('map_ID'));
+                        imageMap = new ImageMap(document.getElementById('workmap'));
                 imageMap.resize();
             </script>        
 
