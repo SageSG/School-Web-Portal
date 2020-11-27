@@ -5,7 +5,6 @@ $userClass = new userClass();
 $userDetails = $userClass->userDetails($_SESSION['uid']);
 include('session.php');
 $userDetails = $userClass->userDetails($session_uid);
-
 ?>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -33,83 +32,40 @@ and open the template in the editor.
                 <section class="overseas-2">
                     <div class="os-content">
                         <h1 style="font-size:1.8vw;">Miracle's</h1>
-                    <hr class="OT">
-                    <div style="font-size:5vw;">Overseas Trip</div>
-                    <hr class="OT">
+                        <hr class="OT">
+                        <div style="font-size:5vw;">Overseas Trip</div>
+                        <hr class="OT">
                     </div>
                 </section>  
             </div>        
 
             <section class="oversea-section">
-                <div class="tile-1 row">  
-                   
-                    <div class="col-md-6">
-                        <div class="tile-picture">
-                        </div>    
-                    </div>
-                    <div class="col-md-6">
-                        <div class="tile-text">
-                            <hr>
-                            <h2>Hanyang University, Korea</h2>
-                            <hr>
 
-                            <p>                                
-                                Number of People: 50
-                                <br>
-                                Duration: 2 weeks
-                                <br>
-                            </p>
-                            <a class="btn btn-outline-dark btn-lg" id="overseasdetail1" role="button" data-toggle="modal" data-target="#exampleModalOverseas1">Overseas Detail</a>
-                        </div>    
-                    </div>
-                </div> 
-
-                <div class="tile-1 row">  
-                    <div class="col-md-6">
-                        <div class="tile-picture2">
-                        </div>    
-                    </div>
-                    <div class="col-md-6">
-                        <div class="tile-text">
-                            <hr>
-                            <h2>Sapienza University, Rome</h2>
-                            <hr>
-                            <p>                                
-                                Number of People: 50
-                                <br>
-                                Duration: 2 weeks
-                                <br>
-                            </p>
-                            <a class="btn btn-outline-dark btn-lg" id="overseasdetail2" role="button" data-toggle="modal" data-target="#exampleModalOverseas2">Overseas Detail</a>
-                        </div>    
-                    </div>
-                </div>
-
-
-                <div class="tile-1 row">  
-                    <div class="col-md-6">
-                        <div class="tile-picture3">
-                        </div>    
-                    </div>
-                    <div class="col-md-6">
-                        <div class="tile-text">
-                            <hr>
-                            <h2>Tokyo University, Japan</h2>
-                            <hr>
-
-                            <p>                                
-                                Number of People: 50
-                                <br>
-                                Duration: 2 weeks
-                                <br>
-                            </p>
-                            <a class="btn btn-outline-dark btn-lg" id="overseasdetail3" role="button" data-toggle="modal" data-target="#exampleModalOverseas3">Overseas Detail</a>
-                        </div>    
-                    </div>
-                </div>
-
-
-
+                <?php
+                $conn = mysqli_connect("localhost", "sqldev", "password", "project");
+                $query = $conn->prepare("select * from project.trip");
+                $query->execute();
+                $query->bind_result($tid, $tname, $tpeople, $tdate, $timage);
+                while ($query->fetch()) {
+                    echo "<div class='tile-1 row'>";
+                    echo "<div class='col-md-6'>";
+                    echo "<div class='$timage'></div></div>";
+                    echo "<div class='col-md-6'>";
+                    echo "<div class='tile-text'><hr>";
+                    echo "<h2>$tname</h2><hr><p>";
+                    echo "Number of People: $tpeople<br>";
+                    echo "Duration: $tdate days<br></p>";
+                    if($tid==1){
+                                            echo "<a class='btn btn-outline-dark btn-lg' id='overseasdetail1' role='button' data-toggle='modal' data-target='#exampleModalOverseas1'>Overseas Detail</a>";
+                    }else if($tid==2){
+                                            echo "<a class='btn btn-outline-dark btn-lg' id='overseasdetail2' role='button' data-toggle='modal' data-target='#exampleModalOverseas2'>Overseas Detail</a>";
+                    }else if($tid==3){
+                                            echo "<a class='btn btn-outline-dark btn-lg' id='overseasdetail3' role='button' data-toggle='modal' data-target='#exampleModalOverseas3'>Overseas Detail</a>";
+                    }
+                    echo "</div></div></div>";                  
+                }
+                ?>                                                                                       
+                          
             </section>
 
             <!--Modal--> 
