@@ -89,19 +89,21 @@ if (!empty($_POST['signupSubmit']))
         }
 }
 ?>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<link rel="stylesheet" type="text/css" href="css\style.css" charset="utf-8" />
+<!DOCTYPE html>
 <html lang="en">
     <head>
 <?php
 include "head.php";
 ?>
-        <title>SIT</title>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Login</title>
     </head>
     <body>
 <?php
@@ -113,27 +115,27 @@ include "navbar.php";
                 <div class="row">
                     <div class="col-md-4">
                         <h3>Login</h3>
-                        <form method="post" action="" name="login">
-                            <label for="username" class="d-none d-lg-block">Username or Email</label>
+                        <form method="post" action="#" name="login">
+                            <label for="usernameEmail" class="d-none d-lg-block">Username or Email</label>
                             <input type="text" id="usernameEmail" required name="usernameEmail" placeholder="name@example.com">
                             <label for="password" class="d-none d-lg-block">Password:</label>
-                            <input type="password" name="password" autocomplete="off"/>
+                            <input type="password" id="password" name="password" autocomplete="off"/>
                             <input type="submit" class="button" name="loginSubmit" value="Login">
                         </form>
                     </div>
                     <div class="col-md-4 ml-auto">
                         <h3>Registration</h3>
-                        <form method="post" action="" name="signup">
-                            <label for="fullName" class="d-none d-lg-block">Name:</label>
+                        <form method="post" action="#" name="signup">
+                            <label for="nameReg" class="d-none d-lg-block">Name:</label>
                             <input type="text" id="nameReg" required name="nameReg"
                                    maxlength="45" placeholder="Name" onkeyup="lettersOnly(this)">
-                            <label for="registerEmail" class="d-none d-lg-block">Email</label>
+                            <label for="emailReg" class="d-none d-lg-block">Email</label>
                             <input type="email" id="emailReg" required name="emailReg" placeholder="name@example.com">
-                            <label for="registerUsername" class="d-none d-lg-block">Username:</label>
+                            <label for="usernameReg" class="d-none d-lg-block">Username:</label>
                             <input  type="text" id="usernameReg" required name="usernameReg"
                                    maxlength="45" placeholder="Username" onkeyup="lettersOnly(this)">
 
-                            <label for="registerPassword" class="d-none d-lg-block">Password:</label>
+                            <label for="passwordReg" class="d-none d-lg-block">Password:</label>
                             <input type="password" id="passwordReg" pattern="[A-Za-z0-9!@#$%^&*()_]{6,20}" required name="passwordReg"
                                    title="This field is mandatory, Your password must have at least 6 length and contain at least one uppercase letter." maxlength="45" placeholder="Password">
                             <div class="g-recaptcha" data-sitekey="6LfP-OMZAAAAAOnO_K_jnRPN-rBs6FswXga0HwKq"></div>
@@ -143,12 +145,13 @@ include "navbar.php";
                         </form>
                     </div>
                 </div>
+            </div>
         </main>
-
-    </body>
-
-</html>
 <?php
 include "footer.php";
 ?>
+    </body>
+
+</html>
+
 

@@ -120,12 +120,13 @@ and open the template in the editor.
                 <br>
             </div>
              
-                </main><br><br><br><br><br>
+                </main>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div id="footer">
                 <?php
                 include "footer.php";
                 ?>
-                </div>
+            </div>
         </div>
                 </body>
                 </html>
