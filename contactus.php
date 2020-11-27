@@ -33,7 +33,7 @@ and open the template in the editor.
                         <div class="contact-centered">
                             <h1>About Us</h1>
                             <hr>
-                            <div class="text2">Singapore Institute of Technology (SIT) is Singapore’s University of Applied Learning. SIT’s vision is to be a leader in innovative learning by integrating learning, industry and community. Its mission is to nurture and develop individuals who build on their interests and talents to impact society in meaningful ways.</div>
+                            <div class="text2">At Miracle School, we turn your dreams into reality. Join us as we emerge and conquer any problems that you face in 1004 and beyond. We are sure that we will need you as we are only a 3 man team. Thank you for visiting this website.</div>
                             <hr>
                         </div>
                     </div>
