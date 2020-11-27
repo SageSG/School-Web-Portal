@@ -60,6 +60,24 @@ if (!empty($_POST['dele'])) {
     //$query2->close();
     $conn->close();
 }
+
+$conn = mysqli_connect("localhost", "sqldev", "password", "project");
+                $query = $conn->prepare("select * from project.trophies");
+                $query->execute();
+                $query->bind_result($idt, $namet, $teamt, $logot);
+                while ($query->fetch()) {
+                    if($idt==1){
+                        $winner1 = [$namet,$teamt,$logot];
+                    }else if ($idt==2){
+                        $winner2 = [$namet,$teamt,$logot];
+                    }else if ($idt==3){
+                        $winner3 = [$namet,$teamt,$logot];
+                    }           
+                }
+                //close connection
+    $query->close();
+    //$query2->close();
+    $conn->close();
 ?>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -127,15 +145,15 @@ and open the template in the editor.
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="Modal1">2020 Champion Trophy</h5>
+                                    <h5 class="modal-title" id="Modal1"><?php echo $winner1[0];?></h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <img class="trophy-logos" src="images/kobe.png" alt="Jr Bryants logo">
+                                    <img class="trophy-logos" src="<?php echo $winner1[2];?>" alt="Jr Bryants logo">
                                     <hr>
-                                    Won by Jr. Bryant
+                                    Won by <?php echo $winner1[1];?>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Continue</button>
@@ -148,15 +166,15 @@ and open the template in the editor.
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="Modal2">Highest popularity Trophy</h5>
+                                    <h5 class="modal-title" id="Modal2"><?php echo $winner3[0];?></h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <img class="trophy-logos" src="images/titans.png" alt="titans logo">
+                                    <img class="trophy-logos" src="<?php echo $winner3[2];?>" alt="titans logo">
                                     <hr>
-                                    Won by Team Titans
+                                    Won by <?php echo $winner3[1];?>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Continue</button>
@@ -169,15 +187,15 @@ and open the template in the editor.
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="Modal3">Game of the Year</h5>
+                                    <h5 class="modal-title" id="Modal3"><?php echo $winner2[0];?></h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <img class="trophy-logos" src="images/gamet.png" alt="Game throwers logo">
+                                    <img class="trophy-logos" src="<?php echo $winner2[2];?>" alt="Game throwers logo">
                                     <hr>
-                                    Won by Game Throwers
+                                    Won by <?php echo $winner2[1];?>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Continue</button>

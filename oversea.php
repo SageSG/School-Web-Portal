@@ -64,6 +64,10 @@ and open the template in the editor.
                     }
                     echo "</div></div></div>";                  
                 }
+                //close connection
+    $query->close();
+    //$query2->close();
+    $conn->close();
                 ?>                                                                                       
                           
             </section>
