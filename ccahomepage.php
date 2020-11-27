@@ -91,10 +91,11 @@ $userDetails=$userClass->userDetails($session_uid);
             <p>Students are encouraged to adopt an active and enriched lifestyle through involvement in the various activities and programmes organised by the many student organisations in SO.</p></div>   
         <div class="row">
         <div class="col-md-4">        
-            <div class="flip-card">
+            <div class="flip-card hp-text1">
                 <div class="flip-card-inner">
                     <div class="flip-card-front" >
                         <img src="images/basketballbanner.png" alt="basketball">
+                                            Basketball
                     </div>
                     <div class="flip-card-back">
                         <h2>Basketball</h2> <img src="images/basketball1.png" class="headerimg" alt="basketball">
@@ -104,11 +105,12 @@ $userDetails=$userClass->userDetails($session_uid);
             </div>
         </div>       
         <div  class="col-md-4"> 
-            <div class="flip-card">
+            <div class="flip-card hp-text1">
                 <div class="flip-card-inner">
                     <div class="flip-card-front" >
                         <img src="images/swimmingbanner.png" alt="swimming">
-                    </div>
+                        Swimming
+                    </div>  
                     <div class="flip-card-back">
                         <h2>Swimming</h2> <img src="images/swimming.png" class="headerimg" alt="swimming">
                         <h6>SO's Swim Team is made up of a group of disciplined and tightly knit swimmers who hone their skills either for recreational or competitive purposes through regular training sessions. </h6>
@@ -119,10 +121,11 @@ $userDetails=$userClass->userDetails($session_uid);
         </div>
         <div  class="col-md-4" >   
            
-            <div class="flip-card">
+            <div class="flip-card hp-text1">
                 <div class="flip-card-inner">
                     <div class="flip-card-front" >
                         <img src="images/chinese.png" alt="chinese orchestra">
+                                            Orchestra
                     </div>
                     <div class="flip-card-back">
                         <h2>Chinese</h2> <img src="images/dragon.png" class="headerimg" alt="chinese orchestra">
