@@ -33,7 +33,7 @@ and open the template in the editor.
                         <div class="contact-centered">
                             <h1>About Us</h1>
                             <hr>
-                            <h3>Singapore Institute of Technology (SIT) is Singapore’s University of Applied Learning. SIT’s vision is to be a leader in innovative learning by integrating learning, industry and community. Its mission is to nurture and develop individuals who build on their interests and talents to impact society in meaningful ways.</h3>
+                            <div class="text2">Singapore Institute of Technology (SIT) is Singapore’s University of Applied Learning. SIT’s vision is to be a leader in innovative learning by integrating learning, industry and community. Its mission is to nurture and develop individuals who build on their interests and talents to impact society in meaningful ways.</div>
                             <hr>
                         </div>
                     </div>
@@ -110,7 +110,7 @@ and open the template in the editor.
                             <img src="images/jacky.jpg" alt="Jacky" class="thumbnail-pic">
                             <div class="container">
                                 <hr class="my-4">
-                                <h4><b>Jacky Candy</b></h4>
+                                <div class="text2"><b>Jacky Candy</b></div>
                                 <p>2001677@sit</p>
                             </div>
                         </div>                        
@@ -123,7 +123,7 @@ and open the template in the editor.
                             <img src="images/ian.jpg" alt="Ian" class="thumbnail-pic">
                             <hr class="my-4">
                             <div class="container">
-                                <h4><b>Ian Beast</b></h4>
+                                <div class="text2"><b>Ian Beast</b></div>
                                 <p>2000941@sit</p>
                             </div>
                         </div>
@@ -136,7 +136,7 @@ and open the template in the editor.
                             <img src="images/ipman.jpg" alt="Hou Liang" class="thumbnail-pic">
                             <div class="container">
                                 <hr class="my-4">
-                                <h4><b>Hou Liang</b></h4>
+                                <div class="text2"><b>Hou Liang</b></div>
                                 <p>2000721@sit</p>
                             </div>
                         </div>

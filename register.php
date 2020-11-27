@@ -114,7 +114,7 @@ include "navbar.php";
             <div class="container login-body">
                 <div class="row">
                     <div class="col-md-4">
-                        <h3>Login</h3>
+                        <h1>Login</h1>
                         <form method="post" action="#" name="login">
                             <label for="usernameEmail" class="d-none d-lg-block">Username or Email</label>
                             <input type="text" id="usernameEmail" required name="usernameEmail" placeholder="name@example.com">
@@ -124,7 +124,7 @@ include "navbar.php";
                         </form>
                     </div>
                     <div class="col-md-4 ml-auto">
-                        <h3>Registration</h3>
+                        <h1>Registration</h1>
                         <form method="post" action="#" name="signup">
                             <label for="nameReg" class="d-none d-lg-block">Name:</label>
                             <input type="text" id="nameReg" required name="nameReg"

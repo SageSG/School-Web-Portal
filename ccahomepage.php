@@ -8,7 +8,7 @@ $userDetails=$userClass->userDetails($session_uid);
 ?>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head> 
         <?php
         include "head.php";
         ?>
@@ -20,11 +20,11 @@ $userDetails=$userClass->userDetails($session_uid);
         include "navbar.php";
         ?>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top<img src="images/download.png" alt="to top button" width="25"></button>
+        <button onclick="topFunction()" id="myBtn" aria-labelledby="myBtn" title="Go to top">Top<img src="images/download.png" alt="to top button" width="25"></button>
       
-<section class="part1">
+<section class="part1" role="banner">
                 <!--Carousel-->
-                <div class="col-md-12">
+                <div class="col-md-12" aria-labelledby="carouselExampleIndicators">
                     <!-- Indicators -->
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -56,26 +56,26 @@ $userDetails=$userClass->userDetails($session_uid);
                         </div>
                         
                         <!-- Controls -->
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" aria-label="leftcarousel" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" aria-label="rightcarousel" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
+                            <span class="sr-only" role="search">Next</span>
                         </a>
                     </div>
                 </div>
             </section>
 
-<div class="hp">
+<div class="hp" role="main">
     <div class="hp-text">
         <h1>Read about our Events</h1>
         <p>Welcome to our CCA and Event Page. <br> Stay tuned to this page as we update more events!</p>
     </div>
 </div>
         
-<div class="part9">
+<div class="part9" role="complementary">
     <div class="part9-text">
         <p> 
             “Feel our hearts pounding, muscles burning, lungs screaming. FEEL our love and hate for our opponent, feel the insane drive to keep pushing, to get to the wall, to win.”
@@ -85,7 +85,7 @@ $userDetails=$userClass->userDetails($session_uid);
 </div>
 
 
-<div class="hp">
+<div class="hp" role="form">
     <div class="hp-text">
         <div><h1> What We Offer </h1>
             <p>Students are encouraged to adopt an active and enriched lifestyle through involvement in the various activities and programmes organised by the many student organisations in SO.</p></div>   
@@ -99,7 +99,7 @@ $userDetails=$userClass->userDetails($session_uid);
                     </div>
                     <div class="flip-card-back">
                         <h2>Basketball</h2> <img src="images/basketball1.png" class="headerimg" alt="basketball">
-                        <h6> SO's Basketball team brings together all enthusiasts of the game from the student population in SO, whether the students prefer to play competitively or for leisure.</h6>
+                        <div class="text1"> SO's Basketball team brings together all enthusiasts of the game from the student population in SO, whether the students prefer to play competitively or for leisure.</div>
                     </div>
                 </div>
             </div>
@@ -113,7 +113,7 @@ $userDetails=$userClass->userDetails($session_uid);
                     </div>  
                     <div class="flip-card-back">
                         <h2>Swimming</h2> <img src="images/swimming.png" class="headerimg" alt="swimming">
-                        <h6>SO's Swim Team is made up of a group of disciplined and tightly knit swimmers who hone their skills either for recreational or competitive purposes through regular training sessions. </h6>
+                        <div class="text1">SO's Swim Team is made up of a group of disciplined and tightly knit swimmers who hone their skills either for recreational or competitive purposes through regular training sessions. </div>
                     </div>
                 </div>
             </div>
@@ -129,7 +129,7 @@ $userDetails=$userClass->userDetails($session_uid);
                     </div>
                     <div class="flip-card-back">
                         <h2>Chinese</h2> <img src="images/dragon.png" class="headerimg" alt="chinese orchestra">
-                        <h6> SO's Chinese Orchestra (SOCO) returns to the Billboard charts, entertaining you with its renditions of popular English pop songs from artists such as Taylor Swift, Beyoncé, Rihanna, One Republic, Walk the Moon, Sam Smith, Bruno Mars and many more.  </h6>
+                        <div class="text1"> SO's Chinese Orchestra (SOCO) returns to the Billboard charts, entertaining you with its renditions of popular English pop songs from artists such as Taylor Swift, Beyoncé, Rihanna, One Republic, Walk the Moon, Sam Smith, Bruno Mars and many more.  </div>
                     </div>
                 </div>
             </div>
@@ -139,7 +139,7 @@ $userDetails=$userClass->userDetails($session_uid);
     </div>       
 </div>
 
-<div class="section2">
+<div class="section2" role="application">
     <div class="section2box">
         <p> 
             "Don't run away from challenges run over them, what are you waiting for join us now."
@@ -147,7 +147,7 @@ $userDetails=$userClass->userDetails($session_uid);
 
     </div>
 </div>
-<div class="hp">
+<div class="hp" role="application">
     <div class="hp-text">
         <h1>"Never Hesitate Always Forward"</h1>
         <p>Hope to see you guys soon, so hurry up join us now. We will be waiting.</p>

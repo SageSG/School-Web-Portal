@@ -4,7 +4,7 @@ session_start();
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
     <a class="navbar-brand" href="/index.php">
         Miracle
-        <img src="images/real.png" width="50" height="50" alt="Miracle School"/>
+        <img src="images/real.png" width="50" height="50" alt="MiracleSchool"/>
         School
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

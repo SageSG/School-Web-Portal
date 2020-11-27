@@ -28,10 +28,11 @@ and open the template in the editor.
         <main>
 
             <button onclick="topFunction()" id="myBtn" title="Go to top">Top<img src="images/download.png" alt="to top button" width="25"></button>
-
+            
             <div class="index-1">
                 <video class="emb-video" controls autoplay poster="/images/videoposter.JPG">
                     <source src="/video/afterschool.mp4" type="video/mp4">
+                    <track src="captions_en.vtt" kind="captions" srclang="en" label="English_captions">
                     Your browser does not support the video tag.
                 </video>
             </div>

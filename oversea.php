@@ -32,7 +32,7 @@ and open the template in the editor.
             <div class="overseas-1">
                 <section class="overseas-2">
                     <div class="os-content">
-                        <h4 style="font-size:1.8vw;">Miracle's</h4>
+                        <h1 style="font-size:1.8vw;">Miracle's</h1>
                     <hr class="OT">
                     <div style="font-size:5vw;">Overseas Trip</div>
                     <hr class="OT">
