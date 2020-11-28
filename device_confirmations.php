@@ -1,9 +1,9 @@
  <?php
 include('config.php');
-
+session_start();
 if(empty($_SESSION['uid']))
 {
-	header("Location: index.php");
+	header("Location: register.php");
 }
 
 include('class/userClass.php');
@@ -19,6 +19,7 @@ $ga = new GoogleAuthenticator();
 $qrCodeUrl = $ga->getQRCodeGoogleUrl($email, $secret,'9lessons Demos');
 ?>
 
+<!DOCTYPE html>
 <html>
 <head>
     <?php
