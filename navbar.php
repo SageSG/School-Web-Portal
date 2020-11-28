@@ -1,3 +1,6 @@
+<script defer
+        src="js/show.js">
+</script>
 <?php
 session_start();
 ?>
@@ -13,37 +16,18 @@ session_start();
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-<!--            <li class="nav-item active">
-                <a class="nav-link" href="/home.php">Home <span class="sr-only">(current)</span></a>
-            </li>-->
             <li class="nav-item">
                 <a class="nav-link" href="/ccahomepage.php">Events & CCAs</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/signup.php">Sports & Adventure</a>
             </li>
-<!--            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Student's Life
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/ccahomepage.php">CCAs</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/basketball.php">Sports & Adventure</a>
-
-                </div>
-            </li>-->
-
             <li class="nav-item">
                 <a class="nav-link" href="/oversea.php">Trips & Exchanges</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/contactus.php">Contact Us</a>
             </li>
-            <!--Disabled Items-->
-            <!--      <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                  </li>-->
         </ul>
         <ul class="navbar-nav">
             <!-- Admin settings -->

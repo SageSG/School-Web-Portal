@@ -13,10 +13,6 @@ and open the template in the editor.
     background-color: red;
 }
 
-.active {
-    color:white;
-}
-
 /*To top button*/
 #myBtn {
     display: none; /* Hidden by default */
