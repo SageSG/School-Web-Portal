@@ -99,7 +99,7 @@ $userDetails=$userClass->userDetails($session_uid);
                     </div>
                     <div class="flip-card-back">
                         <h2>Basketball</h2> <img src="images/basketball1.png" class="headerimg" alt="basketball">
-                        <div class="text1"> SO's Basketball team brings together all enthusiasts of the game from the student population in SO, whether the students prefer to play competitively or for leisure.</div>
+                        <div class="text1" style="font-size:15px;"> Miracle's Basketball team brings together all enthusiasts of the game from the student population in SO, whether the students prefer to play competitively or for leisure.</div>
                     </div>
                 </div>
             </div>
@@ -113,7 +113,7 @@ $userDetails=$userClass->userDetails($session_uid);
                     </div>  
                     <div class="flip-card-back">
                         <h2>Swimming</h2> <img src="images/swimming.png" class="headerimg" alt="swimming">
-                        <div class="text1">SO's Swim Team is made up of a group of disciplined and tightly knit swimmers who hone their skills either for recreational or competitive purposes through regular training sessions. </div>
+                        <div class="text1" style="font-size:15px;">Miracle's Swim Team is made up of a group of disciplined and tightly knit swimmers who hone their skills either for recreational or competitive purposes through regular training sessions. </div>
                     </div>
                 </div>
             </div>
@@ -129,7 +129,7 @@ $userDetails=$userClass->userDetails($session_uid);
                     </div>
                     <div class="flip-card-back">
                         <h2>Chinese</h2> <img src="images/dragon.png" class="headerimg" alt="chinese orchestra">
-                        <div class="text1"> SO's Chinese Orchestra (SOCO) returns to the Billboard charts, entertaining you with its renditions of popular English pop songs from artists such as Taylor Swift, Beyoncé, Rihanna, One Republic, Walk the Moon, Sam Smith, Bruno Mars and many more.  </div>
+                        <div class="text1" style="font-size:15px;"> Miracle's Chinese Orchestra (SOCO) returns to the Billboard charts, entertaining you with its renditions of popular English pop songs from artists such as Taylor Swift, Beyoncé, Rihanna, One Republic, Walk the Moon, Sam Smith, Bruno Mars and many more.  </div>
                     </div>
                 </div>
             </div>
