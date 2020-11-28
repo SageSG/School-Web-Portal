@@ -31,6 +31,9 @@
                     </div>
                 </div>
 <section class="index-4">
+                <a href="#modulexemption">
                     <div class="index-content">
+                        <!--<div class="centered">Module Exemption</div>-->
                     </div>  
+                </a>
             </section>
