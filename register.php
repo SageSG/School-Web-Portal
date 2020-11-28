@@ -119,7 +119,7 @@ include "navbar.php";
                             <label for="usernameEmail" class="d-none d-lg-block">Username or Email</label>
                             <input type="text" id="usernameEmail" required name="usernameEmail" placeholder="name@example.com">
                             <label for="password" class="d-none d-lg-block">Password:</label>
-                            <input type="password" id="password" name="password" autocomplete="off"/>
+                            <input type="password" id="password" placeholder="********" name="password" autocomplete="off"/>
                             <input type="submit" class="button" name="loginSubmit" value="Login">
                         </form>
                     </div>
