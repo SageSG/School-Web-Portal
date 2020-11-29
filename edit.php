@@ -14,7 +14,6 @@ if ($_SESSION['uid'] != "8888") {
 
 $conn = mysqli_connect("localhost", "sqldev", "password", "project");
 $storedid = $_SESSION['uid'];
-$hash_password = hash('sha256', $password);
 if (isset($_POST["updateAcc"])) {
     if ($_POST["updateAcc"] == "yes") {
         $email = $_POST["email"];
@@ -24,6 +23,7 @@ if (isset($_POST["updateAcc"])) {
 
         if ($email_check) { //check condition to fuifill preg_match
             $query = $conn->prepare('update users set email=?,username=?,password=? WHERE uid=?');
+            $hash_password = hash('sha256', $password);
             $query->bind_param('sssi', $email, $username, $hash_password, $storedid);
             if ($query->execute()) {
                 header('Location: edit.php');
