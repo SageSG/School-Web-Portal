@@ -42,7 +42,7 @@ and open the template in the editor.
             <section class="oversea-section">
 
                 <?php
-                $conn = mysqli_connect("localhost", "sqldev", "password", "project");
+                $conn = mysqli_connect("localhost", "normal", "password", "project");
                 $query = $conn->prepare("select * from project.trip");
                 $query->execute();
                 $query->bind_result($tid, $tname, $tpeople, $tdate, $timage);

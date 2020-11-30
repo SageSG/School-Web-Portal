@@ -61,7 +61,7 @@ if (!empty($_POST['dele'])) {
     $conn->close();
 }
 
-$conn = mysqli_connect("localhost", "sqldev", "password", "project");
+$conn = mysqli_connect("localhost", "normal", "password", "project");
                 $query = $conn->prepare("select * from project.trophies");
                 $query->execute();
                 $query->bind_result($idt, $namet, $teamt, $logot);
