@@ -130,10 +130,14 @@ window.onclick = function(event) {
 
 </script>
     </main>
-    <?php
-    include "footer.php";
-    ?>
-</body>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div id="footer">
+                <?php
+                include "footer.php";
+                ?>
+            </div>
+        </div>
+    </body>
 </html>
 
 
