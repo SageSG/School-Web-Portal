@@ -68,14 +68,14 @@ and open the template in the editor.
 ?>
         </table><br><br><br><br><br><br><br><br>
     </div>
-    </main>
-        <br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div id="footer">
                 <?php
                 include "footer.php";
                 ?>
             </div>
-</body>
+        </div>
+    </body>
 </html>
 
 
