@@ -5,6 +5,7 @@ $userClass = new userClass();
 $userDetails=$userClass->userDetails($_SESSION['uid']);
 
 include('session.php');
+include('session2.php');
 $userDetails=$userClass->userDetails($session_uid);
 
 if ($_SESSION['uid']!="8888")

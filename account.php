@@ -3,8 +3,10 @@ include('config.php');
 include('class/userClass.php');
 $userClass = new userClass();
 $userDetails = $userClass->userDetails($_SESSION['uid']);
-
+// Check if the user has login anot
 include('session.php');
+// Check for login
+include('session2.php');
 $userDetails = $userClass->userDetails($session_uid);
 ?>
 <!DOCTYPE html>

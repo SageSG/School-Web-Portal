@@ -4,6 +4,7 @@ include('class/userClass.php');
 $userClass = new userClass();
 $userDetails=$userClass->userDetails($_SESSION['uid']);
 include('session.php');
+include('session2.php');
 ?>
 <!DOCTYPE html>
 <!--
@@ -21,11 +22,11 @@ and open the template in the editor.
         <title>SIT</title>
     </head>
     <body>
+                <div id ="wrapper">
         <?php
         include "navbar.php";
         ?> 
-    <main class="container">          
-        <div>
+    <main class="container"> 
 <div class="settings">
   <h1>CCA Record</h1>
       </div>
@@ -50,7 +51,7 @@ and open the template in the editor.
     }
     $query=$conn->prepare("select * from users, basketball where users.uid = basketball.uid;");
     $query->execute();
-    $query->bind_result($uid,$username,$password,$email,$name,$profile_pic,$google_auth_code,$bid,$bname,$uid  );
+    $query->bind_result($uid,$username,$password,$email,$name,$profile_pic,$google_auth_code,$bid,$bname,$uid);
     while($query->fetch())
     {
             if ($uid == $session_uid)
@@ -67,7 +68,7 @@ and open the template in the editor.
     
 ?>
         </table><br><br><br><br><br><br><br><br>
-    </div>
+        </main>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div id="footer">
                 <?php
