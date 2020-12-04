@@ -39,7 +39,7 @@
         <div class="row align-items-center">
           <div class="col-md-8 col-sm-6 col-xs-12">
             <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
-         <a href="#">SIT</a>.
+         <a href="#">Miracle School</a>.
             </p>
           </div>
 
