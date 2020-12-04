@@ -48,6 +48,7 @@ $conn=mysqli_connect("localhost","sqldev","password","project");
 			echo "<th scope='col'>UID</th>";
 			echo "<th scope='col'>Name</th>";
 			echo "<th scope='col'>Email</th>";
+                        echo "<th scope='col'>Edit</th>";
                         echo "<th scope='col'>Delete</th>";
 			echo "</tr>";
                         echo "</thead>";
@@ -58,6 +59,7 @@ $conn=mysqli_connect("localhost","sqldev","password","project");
 				echo "<td>".$uid."</td>";
 				echo "<td>".$username."</td>";
                                 echo "<td>".$email."</td>";
+                                echo "<td><a href='edituser.php?operation=edit&uid=".$uid."&username=".$username."&email=".$email."'>edit</a></td>";
 				echo "<td><a href='delete2.php?operation=delete&uid=".$uid."'>delete</a></td>";
 				echo "</tr>";	
 	
