@@ -116,9 +116,9 @@ include "navbar.php";
                     <div class="col-md-4">
                         <h1 style="color:#365D98;">Login</h1>
                         <form method="post" action="#" name="login">
-                            <label for="usernameEmail" class="d-none d-lg-block">Username or Email</label>
+                            <label for="usernameEmail" class="">Username or Email</label>
                             <input type="text" id="usernameEmail" required name="usernameEmail" placeholder="name@example.com">
-                            <label for="password" class="d-none d-lg-block">Password:</label>
+                            <label for="password" class="">Password:</label>
                             <input type="password" id="password" placeholder="********" name="password" autocomplete="off"/>
                             <input type="submit" class="button" name="loginSubmit" value="Login">
                         </form>
@@ -126,16 +126,16 @@ include "navbar.php";
                     <div class="col-md-4 ml-auto">
                         <h1 style="color:#365D98;">Registration</h1>
                         <form method="post" action="#" name="signup">
-                            <label for="nameReg" class="d-none d-lg-block">Name:</label>
+                            <label for="nameReg" class="">Name:</label>
                             <input type="text" id="nameReg" required name="nameReg"
                                    maxlength="45" placeholder="Name" onkeyup="lettersOnly(this)">
-                            <label for="emailReg" class="d-none d-lg-block">Email</label>
+                            <label for="emailReg" class="">Email</label>
                             <input type="email" id="emailReg" required name="emailReg" placeholder="name@example.com">
-                            <label for="usernameReg" class="d-none d-lg-block">Username:</label>
+                            <label for="usernameReg" class="">Username:</label>
                             <input  type="text" id="usernameReg" required name="usernameReg"
                                    maxlength="45" placeholder="Username" onkeyup="lettersOnly(this)">
 
-                            <label for="passwordReg" class="d-none d-lg-block">Password:</label>
+                            <label for="passwordReg" class="">Password:</label>
                             <input type="password" id="passwordReg" pattern="[A-Za-z0-9!@#$%^&*()_]{6,20}" required name="passwordReg"
                                    title="This field is mandatory, Your password must have at least 6 length and contain at least one uppercase letter." maxlength="45" placeholder="Password">
                             <div class="g-recaptcha" data-sitekey="6LfP-OMZAAAAAOnO_K_jnRPN-rBs6FswXga0HwKq"></div>
