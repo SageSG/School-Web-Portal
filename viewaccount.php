@@ -65,14 +65,15 @@ if(isset($_POST["user"])) {
 		$query=$conn->prepare("select * from project.users WHERE username=?");
 		$query->bind_param('s',$username);
 		$query->execute();
-			$query->bind_result($uid,$email,$password,$username,$name,$profile_pic,$google_auth_code );
+			$query->bind_result($uid,$username,$password,$email,$name,$profile_pic,$google_auth_code );
 			echo "<table class='table'>";
                         echo "<thead>";
 			echo "<tr>";
 			echo "<th scope='col'>UID</td>";
-			echo "<th scope='col'>email</td>";
-			echo "<th scope='col'>name</td>";
-                        echo "<th scope='col'>delete</td>";
+			echo "<th scope='col'>Email</td>";
+			echo "<th scope='col'>Name</td>";
+                        echo "<th scope='col'>Edit</td>";
+                        echo "<th scope='col'>Delete</td>";
 			echo "</tr>";
                         echo "</thead>";
                         echo "<tbody>";
@@ -82,7 +83,8 @@ if(isset($_POST["user"])) {
 				echo "<td>".$uid."</td>";
 				echo "<td>".$email."</td>";
 				echo "<td>".$username."</td>";
-				echo "<td><a href='delete2.php?operation=delete&uid=".$uid."'>delete</a></td>";
+                                echo "<td><a href='edituser.php?operation=edit&uid=".$uid."&username=".$username."&email=".$email."'>edit</a></td>";
+				echo "<td><a href='delete2.php?operation=delete&uid=".$uid."'>Delete</a></td>";
 				echo "</tr>";	
 	
 			}
