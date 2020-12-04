@@ -86,7 +86,6 @@ if (isset($_POST['form'])) {
     
     $stmt = $conn->prepare("INSERT INTO enquiries(firstname,lastname,adminnumber,faculty,coursetitle,email,contactnumber,introduction) VALUES (?,?,?,?,?,?,?,?)");
     $stmt->bind_param("ssisssis", $fname, $lname,$admin,$faculty,$course,$email,$contact,$intro);
-    $stmt->execute();
     if ($stmt->execute()) {
     echo "New records created successfully";
     }

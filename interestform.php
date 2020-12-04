@@ -20,7 +20,7 @@
                 <div class="form-group col-lg-4">
                     <label for="anumber" class="">Admin Number:</label>
                     <input class="form-control" type="text" id="anumber" required name="anumber"
-                           maxlength="45" placeholder="2000XXX" onkeyup="numbersOnly(this)>
+                           maxlength="45" placeholder="2000XXX" onkeyup="numbersOnly(this)">
                 </div>
             </div>
             <div class="form-group">
@@ -51,7 +51,7 @@
                 </div>
                 <div class="form-group col-lg-4">
                     <label for="cnumber">Contact Number:</label>
-                    <input class="form-control" type="text" id="cnumber" required name="cnumber"
+                    <input class="form-control" type="text" id="cnumber" name="cnumber"
                            maxlength="45" placeholder="Optional" pattern="\d{8}" onkeyup="numbersOnly(this)">
                 </div>
             </div>
