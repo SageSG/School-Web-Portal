@@ -5,7 +5,7 @@
             Sign Up Here
         </div>
 
-        <form class="container form-content" action="ccaform.php" method="post">
+        <form class="container form-content" action="signup.php" method="post">
             <div class="form-row">
                 <div class="form-group col-lg-4">
                     <label for="fname" class="">First Name:</label>
@@ -70,7 +70,7 @@
                 </div>                        
             </div>
             <div class="form-group becentered">
-                <button type="submit" class="btn btn-outline-light d-inline">Sign Up</button>
+                <button type="submit" class="btn btn-outline-light d-inline" value="yes" name="form">Sign Up</button>
             </div>
         </form>
     </div>
