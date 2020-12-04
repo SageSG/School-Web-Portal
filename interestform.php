@@ -20,7 +20,7 @@
                 <div class="form-group col-lg-4">
                     <label for="anumber" class="">Admin Number:</label>
                     <input class="form-control" type="text" id="anumber" required name="anumber"
-                           maxlength="45" placeholder="2000XXX">
+                           maxlength="45" placeholder="2000XXX" onkeyup="numbersOnly(this)>
                 </div>
             </div>
             <div class="form-group">
