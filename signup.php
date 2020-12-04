@@ -150,6 +150,7 @@ and open the template in the editor.
                         <hr class="bb">             
                         <?php
                         if ($_SESSION['uid']) {
+                        if ($_SESSION['uid'] != "8888") {
                             echo "<form method='post'>";
                             echo "<input type='hidden' name='uid' value='" . $_SESSION['uid'] . "'>";
                             echo "<input type='hidden' name='bname' value='basketball'>";
@@ -160,6 +161,7 @@ and open the template in the editor.
                             echo "<input type='hidden' name='uid' value='" . $_SESSION['uid'] . "'>";
                             echo "<input type='submit' class='btn btn-primary btn-lg' name='dele' value='Cancel Signup'>";
                             echo "</form>";
+                        }
                         }
                         ?>
                     </div>
