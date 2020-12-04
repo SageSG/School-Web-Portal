@@ -237,8 +237,9 @@ and open the template in the editor.
 
             <?php
             if ($_SESSION['uid']) {
-            include "interestform.php";
+            
             }else{
+                include "interestform.php";
             }
             
             ?>
