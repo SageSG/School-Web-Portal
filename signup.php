@@ -61,6 +61,47 @@ if (!empty($_POST['dele'])) {
     $conn->close();
 }
 
+if (isset($_POST['form'])) {
+    if ($_POST["form"] == "yes") {
+    //database connection
+    $servername = "localhost";
+    $username = "sqldev";
+    $password = "password";
+    $dbname = "project";
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+    
+    $email = $errorMsg = "";
+    $success = true;
+    $fname = $_POST["fname"];
+    $lname = $_POST["lname"];
+    $admin = $_POST["anumber"];
+    $faculty = $_POST["slct1"];
+    $course = $_POST["slct2"];
+    $email = $_POST["email"];
+    $contact = $_POST["cnumber"];
+    $intro = $_POST["intro"];
+    
+    $stmt = $conn->prepare("INSERT INTO enquiries(firstname,lastname,adminnumber,faculty,coursetitle,email,contactnumber,introduction) VALUES (?,?,?,?,?,?,?,?)");
+    $stmt->bind_param("ssisssis", $fname, $lname,$admin,$faculty,$course,$email,$contact,$intro);
+    $stmt->execute();
+    if ($stmt->execute()) {
+    echo "New records created successfully";
+    }
+    else {
+    header('Location: errorSub.php');
+    die;
+        }
+    //close connection
+    $stmt->close();
+    $conn->close();
+    }
+}
+
+
+
 $conn = mysqli_connect("localhost", "normal", "password", "project");
                 $query = $conn->prepare("select * from project.trophies");
                 $query->execute();
