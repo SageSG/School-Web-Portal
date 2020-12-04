@@ -41,14 +41,14 @@ and open the template in the editor.
 $conn=mysqli_connect("localhost","sqldev","password","project");
 		$query=$conn->prepare("select * from project.users");
 		$query->execute();
-			$query->bind_result($uid,$email,$password,$username,$name,$profile_pic,$google_auth_code );
+			$query->bind_result($uid,$username,$password,$email,$name,$profile_pic,$google_auth_code );
 			echo "<table class='table'>";
 			echo "<thead>";
 			echo "<tr>";
 			echo "<th scope='col'>UID</th>";
-			echo "<th scope='col'>email</th>";
-			echo "<th scope='col'>name</th>";
-                        echo "<th scope='col'>delete</th>";
+			echo "<th scope='col'>Name</th>";
+			echo "<th scope='col'>Email</th>";
+                        echo "<th scope='col'>Delete</th>";
 			echo "</tr>";
                         echo "</thead>";
                         echo "<tbody>";
@@ -56,8 +56,8 @@ $conn=mysqli_connect("localhost","sqldev","password","project");
 			{
 				echo "<tr>";
 				echo "<td>".$uid."</td>";
-				echo "<td>".$email."</td>";
 				echo "<td>".$username."</td>";
+                                echo "<td>".$email."</td>";
 				echo "<td><a href='delete2.php?operation=delete&uid=".$uid."'>delete</a></td>";
 				echo "</tr>";	
 	
