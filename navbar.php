@@ -42,21 +42,19 @@ session_start();
                 echo "</a>";
                 echo "<div class='dropdown-menu' aria-labelledby='navbarDropdown1'>";
                 if ($_SESSION['uid'] == "8888") {
-                    echo "<a class='dropdown-item' href='/viewaccount.php'>Search User</a>";
+                    echo "<a class='dropdown-item' href='/edit.php'>Account Settings</a>";
                     echo "<div class='dropdown-divider'></div>";
-                    echo "<a class='dropdown-item' href='/viewall.php'>View Accounts</a>";
+                    echo "<a class='dropdown-item' href='/viewaccount.php'>Search For User</a>";
                     echo "<div class='dropdown-divider'></div>";
-                    echo "<a class='dropdown-item' href='/edit.php'>Edit Account</a>";
+                    echo "<a class='dropdown-item' href='/viewall.php'>View All Accounts</a>";
                     echo "<div class='dropdown-divider'></div>";
-                    echo "<a class='dropdown-item' href='/account.php'>Manage Account</a>";
-                    echo "<div class='dropdown-divider'></div>";
-                    echo "<a class='dropdown-item' href='/viewcca.php'>View CCA</a>";
+                    echo "<a class='dropdown-item' href='/viewcca.php'>View Student CCAs</a>";
                 } else {
-                    echo "<a class='dropdown-item' href='/signup.php'>Sign Up</a>";
+                    echo "<a class='dropdown-item' href='/account.php'>Edit Profile</a>";
                     echo "<div class='dropdown-divider'></div>";
-                    echo "<a class='dropdown-item' href='/ccauser.php'>CCA User</a>";
+                    echo "<a class='dropdown-item' href='/signup.php'>Signup for CCA</a>";
                     echo "<div class='dropdown-divider'></div>";
-                    echo "<a class='dropdown-item' href='/account.php'>Manage Account</a>";
+                    echo "<a class='dropdown-item' href='/ccauser.php'>Check my CCA</a>";
                 }
                 echo "</div></li>";
                 echo "<li class='nav-item'>";
